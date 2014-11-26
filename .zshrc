@@ -250,6 +250,12 @@ alias astyle='nocorrect astyle'
 #alias h='htop'
 #alias vim='sudo vim'
 alias vi='vim'
+function find_task()
+{
+	ps aux| grep -v grep| grep $1 --color;
+}
+alias ftask='find_task'
+
 #export HADOOP_HOME=/search/shaolong/app/context-hadoop-client/hadoop
 #export PATH=/search/shaolong/app/tmppy273/bin:$PATH
 #export PATH=/search/shaolong/app/bin:$PATH
