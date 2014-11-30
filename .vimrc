@@ -59,6 +59,7 @@ hi Number term=bold  cterm=bold ctermfg=1 gui=bold guifg=salmon
 hi Constant term=bold ctermfg=3 gui=bold guifg=khaki
 hi Identifier term=standout cterm=bold ctermfg=6 ctermbg=0 guifg=Cyan guibg=Grey
 hi Statement term=underline ctermfg=6 guifg=palegreen
+hi MatchParen  ctermbg=red ctermfg=white
 "let g:indent_guides_start_level = 1
 let g:indent_guides_auto_colors = 1 
 let g:indent_guides_guide_size = 1
@@ -164,7 +165,7 @@ function TitlePython()
     endwhile
     call append(0,"#!/bin/env python")
 	call append(1,"#encoding=utf-8")
-    call append(2,"# Author: shaolong - shaolong@sogou-inc.com")
+    call append(2,"# Author: Aaron Shao - shao.dut@gmail.com")
     call append(3,"# Last modified: ".strftime("%Y-%m-%d %H:%M"))
     call append(4,"# Filename: ".expand("%:t"))
     call append(5,"# Description: ")
@@ -172,7 +173,7 @@ function TitlePython()
 endfunction
 function AddTitleC()
     call append(0,"/**")
-    call append(1," * @author: shaolong - shaolong@sogou-inc.com")
+    call append(1," * @author: Aaron Shao - shao.dut@gmail.com")
     call append(2," * @last modified ".strftime("%Y-%m-%d %H:%M"))
     call append(3," * @file ".expand("%:t"))
     call append(4," * @description ")
