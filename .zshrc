@@ -265,6 +265,8 @@ alias ftask='find_task'
 #export PATH=$HADOOP_HOME/bin:$PATH
 #export PATH=/search/shaolong/app/vim73/bin:$PATH
 export PATH=/usr/local/Cellar/vim/7.4.335/bin:$PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/
+
  
 #[Esc][h] man 当前命令时，显示简短说明
 alias run-help >&/dev/null && unalias run-help
@@ -358,3 +360,7 @@ autoload compinstall
 # 
 #zle -N self-insert check-cmd-self-insert
 #zle -N backward-delete-char check-cmd-backward-delete-char
+#
+#
+fpath=(/usr/local/share/zsh-completions $fpath)
+
